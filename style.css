@@ -113,8 +113,7 @@ html{
     text-align: center;
     position: fixed;
     top: 0%;
-    width: 100%;    
-       
+    width: 100%;       
     background: linear-gradient(to right, #db1bf6, #19d7f8);
 }
 .menu ul{
@@ -124,7 +123,7 @@ html{
 }
 .menu ul li{
    list-style: none;   
-   margin: 0 25px;  
+   margin: 0 20px;  
    font-size: 24px; 
    line-height: 1%;  
 }
