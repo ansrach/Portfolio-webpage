@@ -69,7 +69,8 @@ body
         margin: 10px;  
     }
     #header{
-        grid-column: 1 / span 1;               
+        grid-column: 1 / span 1;
+                  
     }   
     #about-me{
         grid-column: 1 / span 1;        
@@ -120,7 +121,7 @@ body
     text-align: center;
     color: #b2b1b1;
     font-size: 24px;
-    margin-top: 210px;
+    margin-top: 200px;
     margin-left: 40px; 
 }
 #rach-01{
