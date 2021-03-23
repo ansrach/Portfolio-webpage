@@ -1,0 +1,214 @@
+body
+{
+	background-color: lightgrey;
+}
+.Head
+{
+	background-color:lightseagreen;
+    color:whitesmoke;
+	font-size: 24pt;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+.Title
+{
+	text-align: left;
+	background-color:lightseagreen;
+    color:whitesmoke;
+	font-size: 20pt;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#satay_pic
+{
+	width: 25%;
+    border: 5px dotted lightseagreen;
+    border-radius: 60px;
+    vertical-align: middle;
+    margin-bottom: 40px;
+}
+img
+{
+	width: 100%;
+}
+ul
+{	
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+    font-size: 16pt;    
+    margin: 60px;    
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+#satay_pic2
+{
+	width: 18%;
+    border: 5px dotted lightseagreen;
+    border-radius: 60px;
+    vertical-align: middle;    
+    margin-right: 50px;
+    float: right;
+}
+.image_center{
+    text-align: center;
+}
+p
+{   
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+    font-size: 15pt;
+    text-align: left;
+}
+/*.parent
+{
+    text-align: center;
+} 
+.div_display 
+ {
+    border: 3px solid turquoise;
+    width: 400px;
+    display: inline-block; 	
+} 
+#satay-one
+{
+	position: static;
+	top: 20px;
+    left: 20px;
+}*/
+/* div flex */
+
+.flex_container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;    
+    justify-content: center;
+}
+
+.flex_container > div{
+    border: 3px solid turquoise;
+    width: 300px;
+    margin-left: 25px;
+    margin-bottom: 10px;
+}
+/* unvisited link */
+a:link
+{
+	color: #FF0000; 
+}  
+/* visited link */
+a:visited
+{
+	color:lightseagreen; 
+}  
+/* mouse over link */  
+a:hover
+{ 
+	color: #05647c; 
+} 
+.Menu{   
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+    font-size: 10pt;  
+    color: lightseagreen;    
+    text-align: left; 
+}
+
+/* grid display */
+.grid-container{
+    display: grid;
+    grid-template-columns: 10% auto 20%;
+    grid-gap: 10px;
+}
+
+.grid-container > div{
+    border: 2px solid lightseagreen;
+    font-size: 30px;
+    
+    background-color:linen;
+} 
+#header{
+    grid-column: 1 / span 3;
+    text-align: center;
+}
+
+#menu{
+    grid-column: 1 / span 1;         
+}
+
+#main{
+    grid-column: 2 / span 1;
+}
+
+#right{
+    grid-column: 3 / span 1;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+    font-size: 20pt; 
+    color: lightseagreen;
+}
+
+#footer{
+    grid-column: 1 / span 3;
+    text-align: center;
+    font-size: 15pt;
+} 
+
+
+@media only screen and (max-width: 767px){
+    .grid-container{
+        display: grid;
+        grid-template-columns: auto 20%;
+        grid-gap: 10px;
+    }
+    #header{
+        grid-column: 1 / span 2;
+    }
+    
+    #menu{
+        grid-column: 1 / span 2;
+        text-align: left;
+    }
+    
+    #menu div{
+        display: inline-block;
+    }
+
+    #main{
+        grid-column: 1 / span 1;
+    }
+    #right{
+        grid-column: 2 / span 1;
+    }
+    #footer{
+        grid-column: 1 / span 2;
+    }
+} 
+
+@media only screen and (max-width: 500px){
+    .grid-container{
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap: 10px;
+    }
+    #header{
+        grid-column: 1 / span 1;
+    }
+    
+    #menu{
+        grid-column: 1 / span 1;
+    }
+    
+    #main{
+        grid-column: 1 / span 1;
+    }
+    #right{
+        grid-column: 1 / span 1;
+    }
+    #footer{
+        grid-column: 1 / span 1;
+    }
+} 
+
+
+#right img{
+    width:100%;
+}
+
+#right div{
+    margin-bottom: 20px;
+}
