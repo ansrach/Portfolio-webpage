@@ -17,6 +17,7 @@ function checkLogin(){
 	if((username == getID) && (password == getPass))
 	{
        alert("Login successful!");
+	   location.replace("https://ansrach.github.io/Portfolio-webpage/index.html")
 	   return false;
 	}
 	else

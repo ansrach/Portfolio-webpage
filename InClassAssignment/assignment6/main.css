@@ -1,9 +1,18 @@
 body{
     margin: 0;
     padding: 0;
-    text-align: center;
+    margin-left: 590px;
+    margin-top: 75px;
     font-size: larger;
+    text-align: center;
     font-family: sans-serif;
-    background-color:rgb(158, 216, 252);
-    color: #50567c;
+    background-color:rgb(204, 235, 255);
+    color: #50567c;    
 }
+legend {    
+    padding: 5px 10px;
+  }
+fieldset {
+    background-color: #eeeeee;    
+    width: 33%;
+  }
