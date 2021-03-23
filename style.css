@@ -1,0 +1,259 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color:#42455a;
+}
+/*.container{
+    width: 100%;
+    height: 100%; 
+      
+}*/
+.grid-container{  
+    grid-template-rows: auto;
+    display: grid;
+    grid-gap: 10px;
+    margin: 10px;
+}
+.grid-container > div{
+    border: 3px solid #b2b1b1;
+    font-size: 30px;       
+    background-color: #555974;
+}
+#header{
+    grid-column: 1 / span 1;    
+}
+#skill{
+    grid-column: 1 / span 1;
+}
+#contact{
+    grid-column: 1 / span 1;
+}
+#game-projects{
+    grid-column: 1 / span 1;
+}
+#assignment{
+    grid-column: 1 / span 1;
+}
+@media only screen and (max-width: 767px){
+    .grid-container{
+        grid-template-rows: auto;
+        display: grid;
+        grid-gap: 10px;
+        margin: 10px;         
+    }
+    #header{
+        grid-column: 1 / span 1;        
+    }  
+    #skill{
+        grid-column: 1 / span 1;        
+    }
+    #contact{
+        grid-column: 1 / span 1;        
+    }
+    #game-projects{
+        grid-column: 1 / span 1;         
+    }  
+    #assignment{
+        grid-column: 1 / span 1;
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 500px){
+    .grid-container{
+        grid-template-rows: auto;
+        display: grid;
+        grid-gap: 10px;
+        margin: 10px;  
+    }
+    #header{
+        grid-column: 1 / span 1;   
+        margin-top: 80px;          
+    }  
+    #skill{
+        grid-column: 1 / span 1;
+        text-align: center;
+    }
+    #contact{
+        grid-column: 1 / span 1;
+        text-align: center;
+    }
+    #game-projects{
+        grid-column: 1 / span 1;         
+    }  
+    #assignment{
+        grid-column: 1 / span 1;
+        text-align: center;
+    }
+}
+.menu{    
+    text-align: center;
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    background: linear-gradient(to right, #db1bf6, #19d7f8);
+}
+.menu ul{
+    display: inline-flex;
+    right: 50px;
+    margin-right: 50px;    
+}
+.menu ul li{
+   list-style: none;   
+   margin: 0 20px;  
+   font-size: 24px;  
+}
+.menu ul li a:visited
+{
+	color:#555974; ; 
+}  
+/* mouse over link */  
+.menu ul li a:hover
+{ 
+	color:#42455a;     
+} 
+
+.introduce-myself{     
+    color: #b2b1b1;  
+    margin-left: 50px; 
+    margin-right: 50px; 
+    margin-top: 70px;
+}
+.introduce-myself h2{
+    font-size: 43px;    
+}
+.introduce-myself p{
+    margin-bottom: 20px;
+    font-size: 21.5px; 
+    line-height: 40px;   
+    position: relative;       
+}
+#rach-01{
+    width: 25%;
+    float: right;  
+    margin-top: 10px;   
+    margin-bottom: 30px; 
+    margin-right: 50px;
+    border: 3px solid#b2b1b1;
+    border-radius: 60px;   
+}
+
+.skill{  
+   color: #b2b1b1;
+   margin-left: 50px; 
+}
+.skill-pic a:hover{
+    opacity: 85%; 
+}
+#unity{
+    width: 25%;    
+}
+#animate-cc{
+    width: 13.5%;
+}
+#aseprite{
+    /*width: 32.5%; 01*/   
+    width: 13.15%; 
+}
+#maya-autodesk{
+    width: 13.15%;
+}
+#git{
+    width: 13.15%;
+}
+#bitbucket{
+    width: 13.18%;
+}
+
+.contact{
+    color: #b2b1b1;     
+    font-size: 16px; 
+    margin-left: 50px;    
+}
+.contact-detail ul{    
+    color: #b2b1b1;
+    list-style: none;
+    line-height: 25px;
+    font-size: 14px;    
+    margin-left: 10px;     
+}
+/*.contact pre{
+    margin-right: 150px;
+}*/
+/* visited link */
+.contact-detail ul a:visited
+{
+	color:#b2b1b1; 
+}  
+/* mouse over link */  
+.contact-detail ul a:hover
+{ 
+	color: lightseagreen; 
+} 
+.reference{       
+    color: #b2b1b1;
+    font-size: 16px; 
+    margin-left: 50px;  
+    margin-bottom: 15px; 
+}
+.reference a:visited
+{
+	color:#b2b1b1; 
+}  
+/* mouse over link */  
+.reference a:hover
+{ 
+	color: lightseagreen; 
+} 
+
+/*myProject*/
+.projects{
+    color: #b2b1b1;  
+    margin-left: 50px; 
+    margin-right: 50px;
+    margin-top: 65px;
+}
+.projects p{
+    font-size: 21.5px;        
+    line-height: 40px;    
+}
+.projects hr{
+    margin-right: 50px;
+}
+.projects a:hover{
+    opacity: 85%;
+}
+#unity-project{
+    border: 2px solid#b2b1b1;
+    border-radius: 30px;    
+}
+#game-pic{
+    width: 35%;
+    float: right;    
+    margin-right: 50px;
+    border: 3px solid#b2b1b1;
+    border-radius: 60px;   
+}
+
+.game-built{
+    font-size: 20px;
+    margin-bottom: 15px;
+    text-align: center;   
+}
+.game-built a:hover{
+    opacity: 85%;
+}
+#project-built{
+    border: 2px solid#b2b1b1;
+    border-radius: 30px;    
+    width: 10%;    
+}
+
+/*inClassAssignment*/
+#assignments-pic{
+    border: 3px solid#b2b1b1;
+    border-radius: 30px;    
+    width: 47.75%;
+    margin-bottom: 45px;
+}
